@@ -194,7 +194,7 @@ clean:
 	$(QUIET)rm -rf ${LCOV_OUTPUT}
 	$(QUIET)rm -rf gcov
 
-	$(QUIET)${MAKE} -C tests clean
+	#$(QUIET)${MAKE} -C tests clean
 	$(QUIET)${MAKE} -C doc clean
 
 doc:

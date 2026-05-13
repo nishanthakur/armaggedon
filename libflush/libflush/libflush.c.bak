@@ -185,7 +185,7 @@ libflush_prefetch(libflush_session_t* session, void* address)
 #elif defined(__i386__) || defined(__x86_64__)
   x86_prefetch(address);
 #else
-// prefetch not available on this platform
+#error No prefetch method available on this platform
 #endif
 }
 
@@ -205,7 +205,7 @@ libflush_prefetch_time(libflush_session_t* session, void* address)
 #elif defined(__i386__) || defined(__x86_64__)
   x86_prefetch(address);
 #else
-// prefetch not available on this platform
+#error No prefetch method available on this platform
 #endif
 
   return libflush_get_timing_end(session) - start;

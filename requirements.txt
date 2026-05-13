@@ -1,0 +1,10 @@
+click==8.3.3
+eviction_strategy_evaluator==0.0.1.dev0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+numpy==2.4.4
+pandas==3.0.3
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+setuptools==82.0.1
+six==1.17.0
