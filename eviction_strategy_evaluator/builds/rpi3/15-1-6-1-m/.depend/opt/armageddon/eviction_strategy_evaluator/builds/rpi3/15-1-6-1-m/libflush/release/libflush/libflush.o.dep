@@ -1,0 +1,6 @@
+/opt/armageddon/eviction_strategy_evaluator/builds/rpi3/15-1-6-1-m/libflush/release/libflush/libflush.o: \
+ libflush/libflush.c libflush/libflush.h libflush/timing.h \
+ libflush/internal.h libflush/eviction/eviction.h \
+ libflush/eviction/../libflush.h libflush/armv8/libflush.h \
+ libflush/armv8/../libflush.h libflush/armv8/flush.h \
+ libflush/armv8/timing.h libflush/armv8/memory.h

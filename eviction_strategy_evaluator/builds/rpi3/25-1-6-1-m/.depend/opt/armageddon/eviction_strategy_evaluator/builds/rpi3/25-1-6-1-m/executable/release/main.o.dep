@@ -1,0 +1,2 @@
+/opt/armageddon/eviction_strategy_evaluator/builds/rpi3/25-1-6-1-m/executable/release/main.o: \
+ main.c /opt/armageddon/libflush/libflush/libflush.h

@@ -1,0 +1,14 @@
+# raspberry_pi3b.yaml
+name: "Raspberry Pi 3B"
+architecture: "armv8"           # Cortex-A53, ARMv8-A
+cache-line-size: 64
+l2-cache:
+  size: 524288                  # 512 KB
+  ways: 16
+  sets: 512
+  slices: 1
+eviction-strategy:
+  n: 21                         # From paper Table 3 — best for Cortex-A53
+  a: 1
+  d: 6
+  eviction-rate: 99.93
