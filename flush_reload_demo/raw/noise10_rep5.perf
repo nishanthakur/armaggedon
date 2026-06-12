@@ -1,0 +1,9 @@
+# started on Fri Jun 12 17:26:33 2026
+
+54167060,,cycles,50553653,100.00,,
+23631506,,instructions,50553653,100.00,0.44,insn per cycle
+841144,,l2d_cache,50553653,100.00,,
+243799,,l2d_cache_refill,50553653,100.00,,
+60618,,l2d_cache_wb,50553653,100.00,,
+8118213,,cache-references,50553653,100.00,,
+125945,,cache-misses,50553653,100.00,1.55,of all cache refs

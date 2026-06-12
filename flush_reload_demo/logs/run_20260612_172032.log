@@ -1,0 +1,41 @@
+[0;36m[17:20:32][0m Results dir : /root/results
+[0;36m[17:20:32][0m Run log     : /root/results/logs/run_20260612_172032.log
+
+[0;36m[17:20:32][0m ════════════════════════════════════════════════════════
+[0;36m[17:20:32][0m   Noise level = 1  (0 background processes)
+[0;36m[17:20:32][0m   Output CSV  : /root/results/csv/results_baseline.csv
+[0;36m[17:20:32][0m ════════════════════════════════════════════════════════
+[0;36m[17:20:32][0m   [noise=1] rep 1/10  |  overall 1/40 (2%)  |  elapsed 0s
+[0;32m[17:23:01] ✓[0m Noise level 1 complete — CSV: /root/results/csv/results_baseline.csv
+
+[0;36m[17:23:01][0m ════════════════════════════════════════════════════════
+[0;36m[17:23:01][0m   Noise level = 5  (5 background processes)
+[0;36m[17:23:01][0m   Output CSV  : /root/results/csv/results_noise5.csv
+[0;36m[17:23:01][0m ════════════════════════════════════════════════════════
+[0;36m[17:23:01][0m   [noise=5] rep 1/10  |  overall 11/40 (27%)  |  elapsed 149s
+[0;32m[17:25:30] ✓[0m Noise level 5 complete — CSV: /root/results/csv/results_noise5.csv
+
+[0;36m[17:25:30][0m ════════════════════════════════════════════════════════
+[0;36m[17:25:30][0m   Noise level = 10  (10 background processes)
+[0;36m[17:25:30][0m   Output CSV  : /root/results/csv/results_noise10.csv
+[0;36m[17:25:30][0m ════════════════════════════════════════════════════════
+[0;36m[17:25:30][0m   [noise=10] rep 1/10  |  overall 21/40 (52%)  |  elapsed 298s
+[0;32m[17:28:03] ✓[0m Noise level 10 complete — CSV: /root/results/csv/results_noise10.csv
+
+[0;36m[17:28:03][0m ════════════════════════════════════════════════════════
+[0;36m[17:28:03][0m   Noise level = 100  (100 background processes)
+[0;36m[17:28:03][0m   Output CSV  : /root/results/csv/results_noise100.csv
+[0;36m[17:28:03][0m ════════════════════════════════════════════════════════
+[0;36m[17:28:03][0m   [noise=100] rep 1/10  |  overall 31/40 (77%)  |  elapsed 451s
+[0;32m[17:31:05] ✓[0m Noise level 100 complete — CSV: /root/results/csv/results_noise100.csv
+
+[1m╔══════════════════════════════════════════════════════════════╗[0m
+[1m║                  Experiment Complete                        ║[0m
+[1m╠══════════════════════════════════════════════════════════════╣[0m
+  Total runs:                    40
+  Total elapsed:                 633s  (~10 min)
+  Combined CSV:                  /root/results/csv/all_results.csv
+  Per-level CSVs:                /root/results/csv/
+  Raw perf files:                /root/results/raw/
+  Run log:                       /root/results/logs/run_20260612_172032.log
+[1m╚══════════════════════════════════════════════════════════════╝[0m

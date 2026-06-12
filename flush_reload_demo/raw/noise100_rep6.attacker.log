@@ -1,0 +1,269 @@
+╔══════════════════════════════════════════════════════════════╗
+║  Flush+Reload Demo  –  ATTACKER  (ARMv8 / Cortex-A53)      ║
+║  Monitoring spy file for victim accesses to session token.  ║
+╚══════════════════════════════════════════════════════════════╝
+
+[attacker] Timer frequency: 19200000 Hz  (52.1 ns/tick)
+
+[attacker] Waiting for spy file '/tmp/fr_demo_spy' …
+
+[attacker] Spy file opened (fd=4)
+[attacker] Spy page mapped at virtual 0xffff96a89000  (shared physical page)
+
+[attacker] ── Phase 1: Calibration ──────────────────────────
+[attacker] Calibration results (200 samples):
+[attacker]   L2 cache HIT  =    132 ns  (line already in cache)
+[attacker]   DRAM miss     =   2162 ns  (line not in cache)
+[attacker]   Threshold     =   1147 ns  (midpoint)
+
+[attacker] ── Phase 2: Flush+Reload Sampling ─────────────────
+[attacker] Collecting 200 samples (warmup=10, wait=70 ms per sample)
+
+  Sample  Reload(ns)  Decision  Running hit count
+  ──────  ──────────  ────────  ─────────────────
+  1       3385        miss      0 hits so far  (warmup)
+  2       2291        miss      0 hits so far  (warmup)
+  3       3125        miss      0 hits so far  (warmup)
+  4       2291        miss      0 hits so far  (warmup)
+  5       1875        miss      0 hits so far  (warmup)
+  6       1354        miss      0 hits so far  (warmup)
+  7       2395        miss      0 hits so far  (warmup)
+  8       1927        miss      0 hits so far  (warmup)
+  9       2187        miss      0 hits so far  (warmup)
+  10      2395        miss      0 hits so far  (warmup)
+  11      2239        miss      0 hits so far
+  12      2708        miss      0 hits so far
+  13      2500        miss      0 hits so far
+  14      1927        miss      0 hits so far
+  15      2135        miss      0 hits so far
+  16      3125        miss      0 hits so far
+  17      2500        miss      0 hits so far
+  18      2239        miss      0 hits so far
+  19      2760        miss      0 hits so far
+  20      2760        miss      0 hits so far
+  21      2916        miss      0 hits so far
+  22      1927        miss      0 hits so far
+  23      2135        miss      0 hits so far
+  24      1875        miss      0 hits so far
+  25      468         HIT ◄   1 hits so far
+  26      2447        miss      1 hits so far
+  27      3437        miss      1 hits so far
+  28      3072        miss      1 hits so far
+  29      2708        miss      1 hits so far
+  30      2291        miss      1 hits so far
+  31      2343        miss      1 hits so far
+  32      2812        miss      1 hits so far
+  33      677         HIT ◄   2 hits so far
+  34      2239        miss      2 hits so far
+  35      2604        miss      2 hits so far
+  36      2291        miss      2 hits so far
+  37      2239        miss      2 hits so far
+  38      2291        miss      2 hits so far
+  39      2031        miss      2 hits so far
+  40      2447        miss      2 hits so far
+  41      1562        miss      2 hits so far
+  42      2343        miss      2 hits so far
+  43      2031        miss      2 hits so far
+  44      2135        miss      2 hits so far
+  45      2343        miss      2 hits so far
+  46      2812        miss      2 hits so far
+  47      2552        miss      2 hits so far
+  48      2187        miss      2 hits so far
+  49      1302        miss      2 hits so far
+  50      2447        miss      2 hits so far
+  51      2187        miss      2 hits so far
+  52      2395        miss      2 hits so far
+  53      2395        miss      2 hits so far
+  54      2239        miss      2 hits so far
+  55      2083        miss      2 hits so far
+  56      2291        miss      2 hits so far
+  57      2187        miss      2 hits so far
+  58      2291        miss      2 hits so far
+  59      2708        miss      2 hits so far
+  60      2864        miss      2 hits so far
+  61      2708        miss      2 hits so far
+  62      2291        miss      2 hits so far
+  63      2447        miss      2 hits so far
+  64      1875        miss      2 hits so far
+  65      1927        miss      2 hits so far
+  66      2552        miss      2 hits so far
+  67      1510        miss      2 hits so far
+  68      1250        miss      2 hits so far
+  69      1458        miss      2 hits so far
+  70      3177        miss      2 hits so far
+  71      2343        miss      2 hits so far
+  72      2031        miss      2 hits so far
+  73      1822        miss      2 hits so far
+  74      3177        miss      2 hits so far
+  75      1458        miss      2 hits so far
+  76      1927        miss      2 hits so far
+  77      2343        miss      2 hits so far
+  78      2760        miss      2 hits so far
+  79      3020        miss      2 hits so far
+  80      2291        miss      2 hits so far
+  81      2916        miss      2 hits so far
+  82      2291        miss      2 hits so far
+  83      3125        miss      2 hits so far
+  84      2239        miss      2 hits so far
+  85      3177        miss      2 hits so far
+  86      2343        miss      2 hits so far
+  87      2083        miss      2 hits so far
+  88      2708        miss      2 hits so far
+  89      2239        miss      2 hits so far
+  90      3072        miss      2 hits so far
+  91      2187        miss      2 hits so far
+  92      2291        miss      2 hits so far
+  93      1979        miss      2 hits so far
+  94      2187        miss      2 hits so far
+  95      3072        miss      2 hits so far
+  96      2343        miss      2 hits so far
+  97      2083        miss      2 hits so far
+  98      1718        miss      2 hits so far
+  99      2500        miss      2 hits so far
+  100     2604        miss      2 hits so far
+  101     3593        miss      2 hits so far
+  102     2343        miss      2 hits so far
+  103     2656        miss      2 hits so far
+  104     2656        miss      2 hits so far
+  105     2916        miss      2 hits so far
+  106     1458        miss      2 hits so far
+  107     2447        miss      2 hits so far
+  108     2552        miss      2 hits so far
+  109     3125        miss      2 hits so far
+  110     2604        miss      2 hits so far
+  111     2760        miss      2 hits so far
+  112     2447        miss      2 hits so far
+  113     1927        miss      2 hits so far
+  114     1614        miss      2 hits so far
+  115     2552        miss      2 hits so far
+  116     2552        miss      2 hits so far
+  117     2187        miss      2 hits so far
+  118     2187        miss      2 hits so far
+  119     3229        miss      2 hits so far
+  120     2031        miss      2 hits so far
+  121     2343        miss      2 hits so far
+  122     1354        miss      2 hits so far
+  123     2291        miss      2 hits so far
+  124     2135        miss      2 hits so far
+  125     1822        miss      2 hits so far
+  126     1979        miss      2 hits so far
+  127     2031        miss      2 hits so far
+  128     2031        miss      2 hits so far
+  129     3958        miss      2 hits so far
+  130     1718        miss      2 hits so far
+  131     4270        miss      2 hits so far
+  132     2291        miss      2 hits so far
+  133     2031        miss      2 hits so far
+  134     2343        miss      2 hits so far
+  135     1145        HIT ◄   3 hits so far
+  136     1562        miss      3 hits so far
+  137     1197        miss      3 hits so far
+  138     2604        miss      3 hits so far
+  139     2864        miss      3 hits so far
+  140     2291        miss      3 hits so far
+  141     2812        miss      3 hits so far
+  142     2343        miss      3 hits so far
+  143     1875        miss      3 hits so far
+  144     2187        miss      3 hits so far
+  145     1875        miss      3 hits so far
+  146     2604        miss      3 hits so far
+  147     2395        miss      3 hits so far
+  148     2343        miss      3 hits so far
+  149     2395        miss      3 hits so far
+  150     2135        miss      3 hits so far
+  151     3229        miss      3 hits so far
+  152     2031        miss      3 hits so far
+  153     2916        miss      3 hits so far
+  154     1718        miss      3 hits so far
+  155     2552        miss      3 hits so far
+  156     2187        miss      3 hits so far
+  157     2291        miss      3 hits so far
+  158     2239        miss      3 hits so far
+  159     2135        miss      3 hits so far
+  160     3177        miss      3 hits so far
+  161     2031        miss      3 hits so far
+  162     2343        miss      3 hits so far
+  163     2604        miss      3 hits so far
+  164     2812        miss      3 hits so far
+  165     2343        miss      3 hits so far
+  166     2343        miss      3 hits so far
+  167     2135        miss      3 hits so far
+  168     2135        miss      3 hits so far
+  169     3541        miss      3 hits so far
+  170     2239        miss      3 hits so far
+  171     781         HIT ◄   4 hits so far
+  172     2395        miss      4 hits so far
+  173     3125        miss      4 hits so far
+  174     1927        miss      4 hits so far
+  175     3281        miss      4 hits so far
+  176     65468       miss      4 hits so far
+  177     2187        miss      4 hits so far
+  178     2187        miss      4 hits so far
+  179     833         HIT ◄   5 hits so far
+  180     2500        miss      5 hits so far
+  181     2447        miss      5 hits so far
+  182     2395        miss      5 hits so far
+  183     2812        miss      5 hits so far
+  184     2447        miss      5 hits so far
+  185     3177        miss      5 hits so far
+  186     1510        miss      5 hits so far
+  187     1093        HIT ◄   6 hits so far
+  188     3385        miss      6 hits so far
+  189     1614        miss      6 hits so far
+  190     2239        miss      6 hits so far
+  191     2239        miss      6 hits so far
+  192     2291        miss      6 hits so far
+  193     2604        miss      6 hits so far
+  194     2031        miss      6 hits so far
+  195     1770        miss      6 hits so far
+  196     2343        miss      6 hits so far
+  197     2447        miss      6 hits so far
+  198     2395        miss      6 hits so far
+  199     2031        miss      6 hits so far
+  200     2500        miss      6 hits so far
+
+══════════════════════════════════════════════════════════════
+  FLUSH+RELOAD — STATISTICAL SUMMARY  (190 samples)
+══════════════════════════════════════════════════════════════
+  Total cache hits   : 6 / 190  (3%)
+  Average reload time: 2660 ns
+  Threshold          : 1147 ns
+  Verdict            : Low hit rate — check timing / CPU pinning.
+
+══════════════════════════════════════════════════════════════
+  EXTRACTING SESSION TOKEN FROM SPY PAGE
+══════════════════════════════════════════════════════════════
+
+  ╔════════════════════════════════════════════════════════════════╗
+  ║  Offset   Hex (16 bytes/row)                   ASCII          ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║  0000   53 45 53 53 49 4f 4e 20  7c 20 69 64 3d 38 66 33  │ SESSION | id=8f3 ║
+  ║  0010   61 31 63 39 64 32 65 37  62 34 30 35 36 20 7c 20  │ a1c9d2e7b4056 |  ║
+  ║  0020   75 73 65 72 3d 62 6f 62  20 7c 20 72 6f 6c 65 3d  │ user=bob | role= ║
+  ║  0030   61 64 6d 69 6e 20 7c 20  65 78 70 69 72 65 73 3d  │ admin | expires= ║
+  ║  0040   31 37 38 31 33 30 33 33  39 34 20 7c 20 69 74 65  │ 1781303394 | ite ║
+  ║  0050   72 3d 31 38 32 00 00 00  00 00 00 00 00 00 00 00  │ r=182........... ║
+  ║  0060   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ║  0070   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ║  0080   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ║  0090   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ║  00a0   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ║  00b0   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  │ ................ ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+  ╔══════════════════════════════════════════════════════════════╗
+  ║       *** FLUSH+RELOAD ATTACK SUCCESSFUL ***                ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  Cache hits observed   : 6                                   ║
+  ║  Hit rate              : 3                                  %║
+  ║  Average reload time   : 2660                              ns ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  EXTRACTED SESSION TOKEN:                                   ║
+  ║    SESSION | id=8f3a1c9d2e7b4056 | user=bob | role=admin | expire║
+  ║    pires=1781303394 | iter=182                                   ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  Attack used no IPC, no signals, no ptrace.                 ║
+  ║  Token was read purely via cache timing side-channel.       ║
+  ╚══════════════════════════════════════════════════════════════╝
+
+[attacker] Done.

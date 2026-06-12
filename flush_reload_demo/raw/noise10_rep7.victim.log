@@ -1,0 +1,24 @@
+╔══════════════════════════════════════════════╗
+║  Flush+Reload Demo  –  VICTIM  (ARMv8)      ║
+║  Simulates a session-token service.         ║
+╚══════════════════════════════════════════════╝
+
+[victim] PID=142334
+[victim] Spy file : /tmp/fr_demo_spy
+[victim] Token    : SESSION | id=8f3a1c9d2e7b4056 | user=bob | role=admin
+
+[victim] Initial token written:
+[victim]   SESSION | id=8f3a1c9d2e7b4056 | user=bob | role=admin | expires=1781303223 | iter=0
+
+[victim] Running — refreshing token every 80 ms
+
+[victim] iter=25      ts=1781299625
+[victim] iter=50      ts=1781299627
+[victim] iter=75      ts=1781299629
+[victim] iter=100     ts=1781299631
+[victim] iter=125     ts=1781299633
+[victim] iter=150     ts=1781299635
+[victim] iter=175     ts=1781299637
+
+[victim] Shutting down …
+[victim] Removed spy file.  Done.
